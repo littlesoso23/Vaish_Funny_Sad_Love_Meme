@@ -22,15 +22,15 @@ elif st.session_state.page == "grid":
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image(Image.open("image1.png").resize((400,400)))
+        st.image(Image.open("Image1.png").resize((400,400)))
     with col2:
-        st.image(Image.open("image2.png").resize((400,400)))
+        st.image(Image.open("Image2.png").resize((400,400)))
 
     col3, col4 = st.columns(2)
     with col3:
-        st.image(Image.open("image3.png").resize((400,400)))
+        st.image(Image.open("Image3.png").resize((400,400)))
     with col4:
-        st.image(Image.open("image4.png").resize((400,400)))
+        st.image(Image.open("Image4.png").resize((400,400)))
 
     if st.button("Remember us?", key="funny_btn"):
         st.session_state.page = "funny"
